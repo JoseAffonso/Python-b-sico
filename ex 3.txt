@@ -1,0 +1,39 @@
+def calcA(deltaY, deltaX):
+   return int(deltaY / deltaX)
+
+def main():
+   print("Descobrir coordenadas -> 0\nDescobrir função      -> 1")
+
+   escolha = int(input("> "))
+
+   if (escolha):
+      print("\nDescubra os valores de a e b a partir de um gráfico\n")
+
+      ds = int(input("delta y = "))
+      dt = int(input("delta x = "))
+      s = int(input("y = "))
+      v = calcA(dY, dX)
+
+      if (v == 1):
+         a = ""
+      if (s > 0):
+         a = a * -1
+
+      if (s > 0):
+         print("\nf(t) = {}x + {}".format(v, t))
+      else:
+         print("\nf(t) = {}v - {}".format(v, s * -1))
+
+   else:
+      print("\nDescubra as coordenadas a partir de uma função\n")
+
+      v = int(input("a = "))
+      So = int(input("b = "))
+      t = int(input("x = "))
+
+      s = v * t + So
+
+      print("\n({}, {})".format(x, y))
+
+if __name__ == "__main__":
+   main()
